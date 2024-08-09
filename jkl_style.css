@@ -1,0 +1,679 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    body: 100%;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* end reset */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+SHARED ATTRIBUTES
+-------------------------------------------------- */
+
+.body, .logo, .logo-homepage, .logo-accent, .textheading, .subnav, .rootnav, .rootnav-homepage, .textbody, .footer, .footer-homepage {
+    overflow: visible;
+}
+
+
+a.logo:link, a.logo:visited, a.logo:active, .textheading, .subnav, .sub1, .sub2, .sub3, .sublastof3, .sublast, .rootnav, .rootnav-homepage, .instrument, .restoration, .neck, .extension, .machines, .gruppo, .testimonials, .textbody, .footer, .footer-homepage, .address, .tel, .tel:visited, .tel:hover, .tel:focus, .email {
+    color: #282828;
+}
+
+
+.logo, .logo-homepage, .logo-accent, .textheading, .textbody {
+    width: 40%;
+}
+
+
+.logo, .logo-homepage, .logo-accent, .textheading, .subnav, .rootnav, .rootnav-homepage, .textbody, .footer, .footer-homepage {
+    background-color: transparent;
+}
+
+
+.logo, .logo-homepage, .logo-accent, .textheading, .textbody {
+    text-align: right;
+}
+
+
+.subnav, .sub1, .sub2, .sub3, .sublastof3, .sublast, .currentsubnav, .rootnav, .rootnav-homepage, .instrument, .restoration, .neck, .extension, .machines, .gruppo, .testimonials, .currentrootnav, .footer, .footer-homepage {
+    text-align: center;
+}
+
+
+a.logo:link, a.logo:visited, a.logo:active, .logo-homepage, .logo-accent, .textheading, .subnav, .rootnav, .rootnav-homepage, .footer, .footer-homepage {
+    text-transform: uppercase;
+}
+
+
+a.logo:link, a.logo:visited, a.logo:active, .subnav, .sub1, .sub2, .sub3, .sublastof3, .sublast, .currentsubnav, .rootnav, .rootnav-homepage, .instrument, .restoration, .neck, .extension, .machines, .gruppo, .testimonials, .currentrootnav, .textbody, .footer, .footer-homepage, .address, .tel, .tel:visited, .tel:hover, .tel:focus, .email {
+    text-decoration: none;
+}
+
+
+.logo-accent, .logo-homepage, .imagearea, .imagearea-homepage, .textheading, .currentsubnav, .textbody, .tel, .tel:visited, .tel:hover, .tel:focus {
+    cursor: default;
+}
+
+
+a.logo:hover, a.sub1:hover, a.sub2:hover, a.sub3:hover, a.sublastof3:hover, a.sublast:hover, a.instrument:hover, a.restoration:hover, a.neck:hover, a.extension:hover, a.machines:hover, a.gruppo:hover, a.testimonials:hover, .address:hover, .email:hover {
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.textheading, .subnav, .rootnav, .rootnav-homepage, .footer, .footer-homepage {
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+/* --------------------------------------------------
+END SHARED ATTRIBUTES
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+WRAPPER - CONTAINS ALL ELEMENTS EXCEPT FOOTER
+-------------------------------------------------- */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+/* --------------------------------------------------
+END WRAPPER
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+BODY - CONTENT CONTAINER
+-------------------------------------------------- */
+
+.body {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    
+    padding-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+
+    animation: fadein 2.0s;
+    -moz-animation: fadein 2.0s;
+    -webkit-animation: fadein 2.0s;
+    -o-animation: fadein 2.0s;
+}
+/* --------------------------------------------------
+END BODY - CONTENT CONTAINER
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+LOGO (JED KRIEGEL) AND LOGO-ACCENT (LUTHIER)
+-------------------------------------------------- */
+
+a.logo:link, a.logo:visited, a.logo:active, .logo-accent, .logo-homepage {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.9em;
+}
+
+
+a.logo:link, a.logo:visited, a.logo:active, .logo-homepage {
+    font-size: 3em;
+    letter-spacing: -0.05em;
+}
+
+
+.logo-homepage {
+    margin-top: 3em;
+}
+
+
+.logo-accent, a.logo:hover {
+    color: #999933;
+}
+
+
+.logo-accent {
+    font-size: 2.8em;
+    letter-spacing: -0.027em;
+}
+/* --------------------------------------------------
+END	LOGO AND LOGO-ACCENT
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+IMAGE AREA:
+
+-IMAGEAREA
+-FADEIN
+-IMG
+-DROPBACK
+-------------------------------------------------- */
+
+.imagearea, .imagearea-homepage {
+    height: 525px;
+    width: 850px;
+
+    position: absolute;
+    top: 2.3em;
+    left: 43.5%;
+
+    animation: fadein 3.7s;
+    -moz-animation: fadein 3.7s;
+    -webkit-animation: fadein 3.7s;
+    -o-animation: fadein 3.7s;
+}
+
+
+.fadein {
+    position: relative;
+}
+
+
+img {
+    height: auto;
+    max-width: 850px;
+}
+
+
+.fadein img.dropback { 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* --------------------------------------------------
+END IMAGE AREA
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+TEXT HEADING
+-------------------------------------------------- */
+
+.textheading {
+    padding-top: 8em;
+    width: 37%;
+    margin-left: 3%;
+    
+    font-size: 1.25em;   
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+}
+/* --------------------------------------------------
+END TEXT HEADING
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+SUB PAGE NAVIGATION:
+-LINKS TO CHILDREN OF ROOT SECTIONS
+-2, 3, OR 4 LINKS PER ROOT SECTION 
+
+-CURRENT SUBNAV CLASS - NON-LINKING, HIGHLIGHTED DISPLAY OF CURRENT PAGE 
+-HOVER BEHAVIORS
+-------------------------------------------------- */
+
+.subnav {
+    width: 850px;
+    position: relative;
+    height: 1.5em;
+    top: 21em;
+    left: 43.5%;
+
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+}
+
+
+/* --------------------------------------------------
+SUBNAV LINKS - UP TO 4 PER SECTION
+-------------------------------------------------- */
+
+.sub1, .sub2, .sub3, .sublastof3, .sublast {
+    display: inline-table;
+
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+
+.sub1, .sub2, .sub3 {
+    border-right: 1px solid #999933;
+}
+
+
+.sub2, .sub3, .sublastof3, .sublast {
+    border-left: 1px solid #999933;
+}
+
+
+/* --------------------------------------------------
+CURRENT SUBNAV CLASS FOR NON-LINKING, HIGHLIGHTED DISPLAY OF CURRENT PAGE
+-------------------------------------------------- */
+
+.currentsubnav {
+    display: inline;
+    min-width: auto;
+
+    border-right: 0 none;
+    border-left: 0 none;
+
+    color: #999933;
+}
+
+
+/* --------------------------------------------------
+SUBNAV LINK BEHAVIORS
+-TRANSITION TO COLOR AND BACKGROUND HIGHLIGHT
+-------------------------------------------------- */
+
+a.sub1:hover, a.sub2:hover, a.sub3:hover, a.sublastof3:hover, a.sublast:hover {
+    color: #999933;
+    background-color: #f0f0f0;
+}
+
+
+/* --------------------------------------------------
+END SUB PAGE NAVIGATION
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+ROOT PAGE NAVIGATION - LINKS TO MAIN SECTION PAGES:
+
+IN THIS ORDER!:
+-INSTRUMENT
+-RESTORATION
+-NECK
+-EXTENSION
+-MACHINES
+-GRUPPO
+-TESTIMONIALS
+
+-CURRENT ROOTNAV CLASS - REMAINS LINK BUT IS HIGHLIGHTED
+-HOVER BEHAVIORS
+-------------------------------------------------- */
+
+.rootnav, .rootnav-homepage {
+    width: 850px;
+    left: 43.5%;
+    position: relative;
+    top: 25em;
+    height: 1.5em;
+
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+    padding-right: 3%;
+    }
+
+
+/* --------------------------------------------------
+ROOTNAV LINKS
+-------------------------------------------------- */
+
+.instrument, .restoration, .neck, .extension, .machines, .gruppo, .testimonials {
+    display: inline-table;
+    padding-left: 1.325em;
+    padding-right: 1.325em;
+}
+
+
+.instrument, .restoration, .neck, .extension, .machines, .gruppo {
+    border-right: 1px solid #999933;
+}
+
+
+.restoration, .neck, .extension, .machines, .gruppo, .testimonials {
+    border-left: 1px solid #999933;
+}
+
+
+/* --------------------------------------------------
+ROOTNAV LINK BEHAVIORS
+-TRANSITION TO COLOR AND BACKGROUND HIGHLIGHT
+-------------------------------------------------- */
+
+a.instrument:hover, a.restoration:hover, a.neck:hover, a.extension:hover, a.machines:hover, a.gruppo:hover, a.testimonials:hover {
+    color: #999933;
+    background-color: #f0f0f0;
+}
+
+
+/* --------------------------------------------------
+CURRENTROOTNAV CLASS FOR LINKING, HIGHLIGHTED DISPLAY OF CURRENT SECTION
+-LINK ALLOWS RETURN TO CURRENT ROOT SECTION PAGE WHEN ON ONE OF IT'S CHILD PAGES
+-------------------------------------------------- */
+
+.currentrootnav {
+    display: inline;
+
+    color: #999933;
+}
+/* --------------------------------------------------
+END ROOT PAGE NAVIGATION
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+TEXT BODY
+-------------------------------------------------- */
+
+.textbody {
+    position: relative;
+    min-height: 20em;
+    width: 37%;
+    padding-top: 5em;
+    padding-left: 3%;
+
+    font-family: 'Antic Didone', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.09em;
+    word-spacing: 0.09em;
+    line-height: 1.825em;
+
+    text-transform: none;
+}
+/* --------------------------------------------------
+END TEXT BODY
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+FOOTER SECTION
+-STREET ADDRESS
+-PHONE NUMBER
+--TEL LINK FOR MOBILE DEVICE OR DESKTOP WITH VOICE CLIENT
+-EMAIL LINK
+-------------------------------------------------- */
+
+.footer, .footer-homepage {
+    width: 50%;
+    padding-bottom: 2em;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+}
+
+.footer {
+    margin-top: 3.5em;
+    height: 1.5em;
+}
+
+.footer-homepage {
+    margin-top: 38em;
+    height: auto;
+}
+
+
+/* --------------------------------------------------
+ADDRESS - MAKE THIS A MAP LINK IN THE FUTURE?
+-------------------------------------------------- */
+.address {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border-right: 1px solid #999933;
+}
+
+
+.address:hover {
+    color: #999933;
+    background-color: #f0f0f0;
+}
+/* --------------------------------------------------
+END ADDRESS
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+PHONE - .TEL LINK
+-------------------------------------------------- */
+
+.tel {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border-right: 1px solid #999933;
+    border-left: 1px solid #999933;
+}
+
+
+/* --------------------------------------------------
+END PHONE
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+EMAIL - MAILTO LINK
+-------------------------------------------------- */
+
+.email {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border-left: 1px solid #999933;
+}
+
+.email:hover {
+    color: #999933;
+    background-color: #f0f0f0;
+}
+/* --------------------------------------------------
+END EMAIL
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+END FOOTER
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+FONT INFO
+-ROBOTO CONDENSED LIGHT
+-NEWS CYCLE
+-ANTIC DIDONE
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'News Cycle';
+    src: url('fonts/NewsCycle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Antic Didone';
+    src: url('fonts/AnticDidone-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------------------------------------------
+END FONT INFO
+-------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------
+CSS ANIMATION FADEIN
+-------------------------------------------------- */
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
+/* Opera */
+@-o-keyframes fadein {
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+/* --------------------------------------------------
+END CSS ANIMATION FADEIN
+-------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------
+MEDIA QUERIES
+-------------------------------------------------- */
+
+
+/* END jkl_style.css */

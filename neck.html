@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+
+<title>Jed Kriegel, Luthier - Neck</title>
+
+
+<meta name="description" content="Jed Kriegel, Luthier. Restoration and construction of double bass instruments and components.">
+
+<meta name="keywords" content="Jed Kriegel, Kriegel, Double Bass, Luthier, C-Extension, Chromatic Extension, Carbon Fiber Extension, Bass, Restoration, Gruppo, Removable Neck, Tuning Machines, Boston Luthier, Bass Luthier">
+
+<meta name="copyright" content="Jed Kriegel, (Photography) &copy; Adam Kellie . All rights reserved.">
+
+
+
+<meta name="robots" content="index, follow">
+
+<link rel="shortcut icon" href="kriegel_favicon.ico">
+
+
+
+<link rel="Stylesheet" href="jkl_style.css">
+
+
+
+<!--js file local download-->
+<script src="jquery-1.10.2.min.js"></script>
+
+
+<!--open random image slideshow script-->
+<script>
+$(function () {
+   var randomize = function (array) {
+       for (var i = array.length - 1; i > 0; i--) {
+           var j = Math.floor(Math.random() * (i + 1));
+           var temp = array[i];
+           array[i] = array[j];
+           array[j] = temp;
+       }
+       return array;
+   };
+
+   var assets = [{
+        url: "images/kriegel_image_01.jpg"
+    }, {
+        url: "images/kriegel_image_07.jpg"
+    }, {
+        url: "images/kriegel_image_08-neck.jpg"
+    }, {
+        url: "images/kriegel_image_10.jpg"
+    }, {
+        url: "images/kriegel_image_10-neck.jpg"
+    }, {
+        url: "images/kriegel_image_11-neck.jpg"
+    }, {
+        url: "images/kriegel_image_14.jpg"
+    }, {
+        url: "images/kriegel_image_15.jpg"
+    }, {
+        url: "images/kriegel_image_17.jpg"
+   }];
+
+   var preload = function (assets) {
+       var num = assets.length,
+           pointer = 0;
+       dom = $('.preload img'),
+       getNextUrl = function (assets) {
+
+           if (pointer < (num - 1)) {
+               pointer++;
+           } else {
+               return false;
+           }
+           dom.attr('src', assets[pointer].url);
+           dom.onload = getNextUrl(assets);
+       };
+
+       dom.onload = getNextUrl(assets);
+       dom.attr('src', assets[0].url);
+
+   };
+   var it = 0; //holding position of assets array
+   var img = $('<img/>');
+   assets = randomize(assets);
+   preload(assets);
+   
+   for(var x = 0; x < assets.length; x++){
+       img = $('<img/>').attr('src',assets[x].url);
+       $('.fadein').append(img);
+   }
+   $('.fadein img:gt(0)').hide(); 
+   setInterval(function(){
+       $('.fadein :first-child').addClass('dropback')
+           .fadeOut(2500).next('img').removeClass('dropback')
+               .fadeIn(2500).end().appendTo('.fadein');
+               
+   }, 7500); 
+
+});
+
+</script>
+<!--close random image slideshow script-->
+
+
+</head>
+<!--close PAGE HEAD-->
+
+
+
+
+
+
+
+<!--open PAGE BODY-->
+	<body>
+
+
+
+
+
+
+
+<!--open WRAPPER - CONTAINS ALL ELEMENTS EXCEPT FOOTER-->
+		<div class="wrapper">
+
+
+
+
+
+
+
+<!--open BODY class - CONTENT CONTAINER-->
+		<div class="body">
+
+
+
+
+
+
+
+<!--open LOGO AND LOGO-ACCENT-->
+			<div class="logo">
+				<a class="logo" href="Home.html">Jed<br>Kriegel</a><br><span class="logo-accent">Luthier</span>
+			</div>
+<!--close LOGO AND LOGO-ACCENT-->
+
+
+
+
+
+
+
+<!--open IMAGEAREA-->
+			<div class="imagearea">
+<!--open FADEIN-->
+				<div class="fadein">
+				</div>
+<!--close FADEIN-->
+			</div>
+<!--close IMAGEAREA-->
+
+
+
+
+
+
+
+<!--open TEXTHEADING-->
+			<div class="textheading">Neck</div>
+<!--close TEXTHEADING-->
+
+
+
+
+
+
+
+<!--open SUBNAV-->
+			<div class="subnav">
+<!--open SUB1--><a class="sub1" href="neck_info1.html">Reinforce</a><!--close SUB1--><!--open SUB2--><a class="sub2" href="neck_info2.html">Reset</a><!--close SUB2--><!--open SUB3--><a class="sub3" href="neck_info3.html">Graft</a><!--close SUB3--><!--open SUBLAST--><a class="sublast" href="neck_info4.html">Remove</a><!--close SUBLAST-->
+			</div>
+<!--close SUBNAV-->
+
+
+
+
+
+
+
+<!--open ROOTNAV-->
+			<div class="rootnav">
+<!--open INSTRUMENT--><a class="instrument" href="instrument.html">Instrument</a><!--close INSTRUMENT--><!--open RESTORATION--><a class="restoration" href="restoration.html">Restoration</a><!--close RESTORATION--><!--open NECK--><div class="currentrootnav"><div class="neck" style="background-color:#f0f0f0; color:#999933; cursor: default">Neck</div></div><!--close NECK--><!--open EXTENSION--><a class="extension" href="extension.html">Extension</a><!--close EXTENSION--><!--open MACHINES--><a class="machines" href="machines.html">Machines</a><!--close MACHINES--><!--open GRUPPO--><a class="gruppo" href="gruppo.html">Gruppo</a><!--close GRUPPO--><!--open TESTIMONIALS--><a class="testimonials" href="testimonials.html">Testimonials</a><!--close TESTIMONIALS-->
+			</div>
+<!--close ROOTNAV-->
+
+
+
+
+
+
+
+<!--open TEXTBODY-->
+			<div class="textbody">The relationship between<br>the musician and their instrument<br>begins with the neck.
+			</div>
+<!--close TEXTBODY-->
+
+
+
+
+
+
+
+		</div>
+<!--close BODY class - content container-->
+
+
+
+
+
+
+
+		</div>
+<!--close WRAPPER-->
+
+
+
+
+
+
+<!--open FOOTER-->
+			<div class="footer"><!--open ADDRESS--><a class="address" href="http://goo.gl/JXcDJt">86&nbsp;Joy&nbsp;Street,&nbsp;Somerville,&nbsp;MA&nbsp;02143</a><!--close ADDRESS--><!--open EMAIL--><a class="email" href=mailto:jed@jedkriegel.com>jed@jedkriegel.com</a><!--close EMAIL-->
+			</div>
+<!--close FOOTER-->
+
+
+
+
+
+
+<!--Start of StatCounter Code for Default Guide-->
+<script type="text/javascript">
+var sc_project=9398758;
+var sc_invisible=1;
+var sc_security="9fe3e31c";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/free-web-stats/" target="_blank"><img
+class="statcounter" src="http://c.statcounter.com/9398758/0/9fe3e31c/1/"
+alt="web stats"></a></div></noscript>
+<!--End of StatCounter Code for Default Guide-->
+</body>
+<!--close PAGE BODY-->
+
+</html>
